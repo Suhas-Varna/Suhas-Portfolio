@@ -4,29 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Suhas Varna | Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="design.css" />
 </head>
 
 <body>
-
-  <!-- Navbar -->
   <header class="navbar">
-    <div class="container nav-inner">
-      
-      <div class="nav-brand">Suhas Varna</div>
-
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <span class="brand-highlight">S</span>uhas Varna
+      </div>
       <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
-
       <nav id="navMenu" class="nav-menu">
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about">About</a>
@@ -36,158 +27,239 @@
         <a class="nav-link" href="#education">Education</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
   <main>
-
-    <!-- Hero -->
     <section id="home" class="hero">
-      <div class="container hero-inner">
-
-        <div class="profile-wrapper">
+  <div class="container">
+    <div class="hero-content">
+      <div class="profile-wrapper">
+        <div class="profile-frame">
           <img src="assets/profile.png" class="profile-img" alt="Suhas Varna">
         </div>
-
-        <h1 class="hero-title">Hi, I'm <span class="highlight">Suhas Varna</span></h1>
-        <h2 class="hero-subtitle">Computer Science Engineer</h2>
-
-        <p class="hero-description">
-          Passionate about emerging technologies, development, programming, and problem-solving with a strong foundation in core CS concepts.
-        </p>
-
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Suhas Varna</span></h1>
+        <h2>Computer Science Engineer</h2>
+        <!-- Add justify-text class to the paragraph -->
+        <p class="justify-text">Passionate about emerging technologies, development, programming, and problem-solving with a strong foundation in core CS concepts.</p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
-        </div>
-
-        <div class="hero-socials">
-          <a href="https://github.com/Suhas-Varna" target="_blank">
-            <i class="ri-github-line"></i>
+          <a href="#projects" class="btn btn-primary">
+            <i class="ri-briefcase-line"></i>
+            <span>View My Work</span>
           </a>
-
-          <a href="https://www.linkedin.com/in/suhas-varna2003" target="_blank">
+          <a href="#contact" class="btn btn-outline">
+            <i class="ri-chat-3-line"></i>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Suhas-Varna" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/suhas-varna2003" target="_blank" class="social-icon" aria-label="LinkedIn">
             <i class="ri-linkedin-fill"></i>
           </a>
-
-          <a href="mailto:suhasvarna45@gmail.com">
-            <i class="ri-mail-line"></i>
+          <a href="mailto:suhasvarna45@gmail.com" class="social-icon" aria-label="Email">
+            <i class="ri-mail-fill"></i>
           </a>
         </div>
-
-
-        <div class="scroll-arrow">
-          <i class="ri-arrow-down-double-line"></i>
-        </div>
-
       </div>
-    </section>
+    </div>
+    <!-- Scroll indicator moved outside hero-content -->
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator">
+        <i class="ri-arrow-down-line"></i>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-
-        <p>
-          A passionate Information Science Engineering student with a strong interest in AI, web development, coding and emerging
-          technologies. Enthusiastic about solving complex problems, building efficient solutions, and staying updated with industry
-          advancements. Eager to gain hands-on experience, work on innovative projects, and apply theoretical knowledge in real-world
-          applications. Driven by curiosity and commitment to continuous learning, seeking opportunities to contribute to the dynamic
-          world of technology.
-        </p>
-
-        <ul class="stats">
-          <li><strong>8.66</strong><small>CGPA</small></li>
-          <li><strong>4+</strong><small>Projects Completed</small></li>
-        </ul>
+        <div class="section-header reveal">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content reveal">
+          <div class="about-text">
+            <p>A passionate Information Science Engineering student with a strong interest in AI, web development, coding and emerging technologies. Enthusiastic about solving complex problems, building efficient solutions, and staying updated with industry advancements.</p>
+            <p>Eager to gain hands-on experience, work on innovative projects, and apply theoretical knowledge in real-world applications. Driven by curiosity and commitment to continuous learning, seeking opportunities to contribute to the dynamic world of technology.</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="ri-award-line"></i>
+              </div>
+              <div class="stat-value">8.66</div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="ri-projector-line"></i>
+              </div>
+              <div class="stat-value">4+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="section alt">
       <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skill-grid">
-
-          <div class="skill-card reveal">
-            <h3><i class="ri-code-s-slash-line skill-icon"></i> Programming Languages</h3>
-            <p>· Java · Python</p>
+        <div class="section-header reveal">
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <!-- Row 1 -->
+          <div class="skills-row">
+            <div class="skill-category reveal">
+              <div class="skill-header">
+                <i class="ri-code-s-slash-line"></i>
+                <h3>Programming Languages</h3>
+              </div>
+              <div class="skill-items">
+                <span class="skill-item">Java</span>
+                <span class="skill-item">Python</span>
+              </div>
+            </div>
+            <div class="skill-category reveal">
+              <div class="skill-header">
+                <i class="ri-database-2-line"></i>
+                <h3>Database Management</h3>
+              </div>
+              <div class="skill-items">
+                <span class="skill-item">MySQL</span>
+                <span class="skill-item">MongoDB</span>
+                <span class="skill-item">DBMS</span>
+              </div>
+            </div>
           </div>
-
-          <div class="skill-card reveal">
-            <h3><i class="ri-database-2-line skill-icon"></i> Database Management</h3>
-            <p>· MySQL · MongoDB · DBMS</p>
+          <!-- Row 2 -->
+          <div class="skills-row">
+            <div class="skill-category reveal">
+              <div class="skill-header">
+                <i class="ri-stack-line"></i>
+                <h3>Full-Stack Development</h3>
+              </div>
+              <div class="skill-items">
+                <span class="skill-item">React.js</span>
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Express.js</span>
+                <span class="skill-item">Node.js</span>
+              </div>
+            </div>
+            <div class="skill-category reveal">
+              <div class="skill-header">
+                <i class="ri-tools-line"></i>
+                <h3>Others</h3>
+              </div>
+              <div class="skill-items">
+                <span class="skill-item">Streamlit</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub</span>
+                <span class="skill-item">Power BI</span>
+                <span class="skill-item">Neural Networks</span>
+              </div>
+            </div>
           </div>
-
-          <div class="skill-card reveal">
-            <h3><i class="ri-reactjs-line skill-icon"></i> Full-Stack Development</h3>
-            <p>· React.js · HTML · Javascript · Express.js · Node.js</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <h3><i class="ri-tools-line skill-icon"></i> Others</h3>
-            <p>· Streamlit · Git · Github · Power BI · Neural Networks</p>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-
-        <div class="project-list">
-
-          <article class="project reveal">
+        <div class="section-header reveal">
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-icon">
+              <i class="ri-dumbbell-fill"></i>
+            </div>
             <h3>Gym Management System</h3>
-            <p class="meta">Technologies Used - MySQL · Streamlit · Python · GitHub.</p>
+            <div class="project-tech">
+              <span>MySQL</span>
+              <span>Streamlit</span>
+              <span>Python</span>
+              <span>GitHub</span>
+            </div>
             <p>Developed a System with functionalities for gym admin to maintain member registrations, memberships tracking, trainers and workout classes management and displaying CRUD operations.</p>
-          </article>
-
-          <article class="project reveal">
+          </div>
+          <div class="project-card reveal">
+            <div class="project-icon">
+              <i class="ri-book-open-line"></i>
+            </div>
             <h3>Book Review and Recommendation System</h3>
-            <p class="meta">Technologies Used - MERN stack · Kaggle dataset · GitHub.</p>
-            <p>Developed a System that displays various types of books with its details and allows users to add reviews, rate and search books, and receive recommendations based on their reading preferences</p>
-          </article>
-
-          <article class="project reveal">
+            <div class="project-tech">
+              <span>MERN</span>
+              <span>Kaggle</span>
+              <span>GitHub</span>
+            </div>
+            <p>Developed a System that displays various types of books with its details and allows users to add reviews, rate and search books, and receive recommendations based on their reading preferences.</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-icon">
+              <i class="ri-task-line"></i>
+            </div>
             <h3>To-Do-List Application</h3>
-            <p class="meta">Technologies Used - React.js · HTML · JavaScript · CSS</p>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+            </div>
             <p>Developed a To-Do List Application using React.js with functionalities to add, update, and delete tasks, providing an interactive and responsive user experience.</p>
-          </article>
-
-          <article class="project reveal">
-            <h3>TexFusion: AI-Powered Textile Quality Inspection and Design Generation System</h3>
-            <p class="meta">Technologies Used - Python · PyTorch · GANs · Deep learning</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-icon">
+              <i class="ri-ai-generator"></i>
+            </div>
+            <h3>TexFusion: AI-Powered Textile Quality Inspection</h3>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>GANs</span>
+              <span>Deep Learning</span>
+            </div>
             <p>Currently developing an AI-driven Textile System that integrates defect detection, pattern recognition, and DCGAN and PyTorch-based customized design generation into a unified platform.</p>
-          </article>
-
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Achievements -->
+    <!-- Achievements Section -->
     <section id="achievements" class="section alt">
       <div class="container">
-        <h2 class="section-title">Achievements & Hobbies</h2>
-
-        <div class="project-list">
-
-          <div class="project reveal">
-            <h3>Achievements</h3>
+        <div class="section-header reveal">
+          <h2 class="section-title">Achievements & Hobbies</h2>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card reveal">
+            <div class="achievement-header">
+              <div class="achievement-icon">
+                <i class="ri-trophy-line"></i>
+              </div>
+              <h3>Achievements</h3>
+            </div>
             <ul>
               <li>Attended some department-level coding hackathon, demonstrating exceptional problem-solving skills, logical analysis and technical expertise.</li>
               <li>Participated in many NSS activities like Campus swachata Drive and plantation events.</li>
               <li>Maintained a good academic record both in 10th and PUC scoring distinction.</li>
             </ul>
           </div>
-
-          <div class="project reveal">
-            <h3>Hobbies</h3>
+          <div class="achievement-card reveal">
+            <div class="achievement-header">
+              <div class="achievement-icon">
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <h3>Hobbies</h3>
+            </div>
             <ul>
               <li>Playing and watching Cricket</li>
               <li>Pen sketching</li>
@@ -195,90 +267,119 @@
               <li>Traveling and photography</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education Section -->
     <section id="education" class="section">
       <div class="container">
-        <h2 class="section-title">Education</h2>
-
-        <div class="edu-list">
-
+        <div class="section-header reveal">
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-timeline">
           <div class="edu-item reveal">
-            <h3>Bachelor of Engineering - Information Science</h3>
-            <h4>RNS Institute of Technology (RNSIT)</h4>
-            <p>Expected Graduation: April 2026 · CGPA: 8.66</p>
+            <div class="edu-icon">
+              <i class="ri-graduation-cap-fill"></i>
+            </div>
+            <div class="edu-content">
+              <h3>Bachelor of Engineering - Information Science</h3>
+              <h4>RNS Institute of Technology (RNSIT)</h4>
+              <p>Expected Graduation: April 2026 · CGPA: 8.66</p>
+            </div>
           </div>
-
           <div class="edu-item reveal">
-            <h3>Pre-University Course (PUC/PCMCs)</h3>
-            <h4>BASE PU College Bannerghatta</h4>
-            <p>Percentage: 94.16</p>
+            <div class="edu-icon">
+              <i class="ri-book-2-fill"></i>
+            </div>
+            <div class="edu-content">
+              <h3>Pre-University Course (PUC/PCMCs)</h3>
+              <h4>BASE PU College Bannerghatta</h4>
+              <p>Percentage: 94.16</p>
+            </div>
           </div>
-
           <div class="edu-item reveal">
-            <h3>Secondary School (CBSE board)</h3>
-            <h4>Jyothy Kendriya Vidyalaya</h4>
-            <p>Percentage: 93.8</p>
+            <div class="edu-icon">
+              <i class="ri-building-2-fill"></i>
+            </div>
+            <div class="edu-content">
+              <h3>Secondary School (CBSE board)</h3>
+              <h4>Jyothy Kendriya Vidyalaya</h4>
+              <p>Percentage: 93.8</p>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-
-        <p>I'm currently open to internship and full-time opportunities. Feel free to reach out!</p>
-
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">I'm currently open to internship and full-time opportunities. Feel free to reach out!</p>
+        </div>
         <div class="contact-grid">
-
           <div class="contact-card reveal">
-            <i class="ri-mail-line contact-icon"></i>
+            <div class="contact-icon">
+              <i class="ri-mail-line"></i>
+            </div>
             <h4>Email</h4>
             <p><a href="mailto:suhasvarna45@gmail.com">suhasvarna45@gmail.com</a></p>
           </div>
-
           <div class="contact-card reveal">
-            <i class="ri-phone-line contact-icon"></i>
+            <div class="contact-icon">
+              <i class="ri-phone-line"></i>
+            </div>
             <h4>Phone</h4>
             <p><a href="tel:+917349379455">+91 7349379455</a></p>
           </div>
-
           <div class="contact-card reveal">
-            <i class="ri-linkedin-box-fill contact-icon"></i>
+            <div class="contact-icon">
+              <i class="ri-linkedin-box-fill"></i>
+            </div>
             <h4>LinkedIn</h4>
             <p><a href="https://www.linkedin.com/in/suhas-varna2003" target="_blank">Connect with me</a></p>
           </div>
-
           <div class="contact-card reveal">
-            <i class="ri-github-fill contact-icon"></i>
+            <div class="contact-icon">
+              <i class="ri-github-fill"></i>
+            </div>
             <h4>GitHub</h4>
             <p><a href="https://github.com/Suhas-Varna" target="_blank">View my works</a></p>
           </div>
-
         </div>
-
-        <p class="languages">Languages: English · Kannada · Hindi</p>
-
+        <!-- Languages Card -->
+        <div class="languages-card reveal">
+          <div class="languages-icon">
+            <i class="ri-global-line"></i>
+          </div>
+          <div class="languages-content">
+            <h4>Languages</h4>
+            <p>English · Kannada · Hindi</p>
+          </div>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Suhas Varna. All rights reserved.</small>
+    <div class="container footer-container">
+      <p>&copy; <span id="year"></span> Suhas Varna. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Suhas-Varna" target="_blank" class="footer-social-icon" aria-label="GitHub">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/suhas-varna2003" target="_blank" class="footer-social-icon" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="mailto:suhasvarna45@gmail.com" class="footer-social-icon" aria-label="Email">
+          <i class="ri-mail-fill"></i>
+        </a>
+      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
